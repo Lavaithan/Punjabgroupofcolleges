@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-User Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="storeCredentials()">Submit</button>
+    </div>
+
+    <div id="hiddenContainer" class="hidden-container">
+        <h2>Unlock Credentials</h2>
+        <input type="password" id="unlockPassword" placeholder="Enter unlock password">
+        <button onclick="unlockContainer()">Unlock</button>
+        <div id="credentials" class="hidden">
+            <h3>Stored Credentials</h3>
+            <div id="storedCredentials"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
